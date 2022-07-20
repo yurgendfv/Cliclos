@@ -1,0 +1,157 @@
+Hardcodeada > es colocar variables que sean estaticos, en JS todo debe cambiar.
+
+Javascript:
+
+sintaxis: como se debe escribir.
+
+fundamentos del JS:
+tiene sus propias reglas y es intrerpretativo.
+
+la buena practica es usar un archivo independiente para poder tener un codigo HTML mas limpio. Todo mas ordenado. y ademas me ayuda a buscar mas rapido los errores que puedan haber.
+Se puede reutilizar el archivo para otros proyectos, porque así tendría la logíca por separado.
+
+Crear comentarios comandos // y /* "  " */
+
+prompt:
+
+sentencia que permite pedirle cosas la user.
+
+Alert: Alerta o aviso.
+
+console: es una palabra clave para mostrar cosas por la consola.
+
+Variable: es una cajita en donde se guarda información que se puede ir acomodando durante el tiempo.
+se declara.
+(nombre de la variable)
+var nombre  = ;
+
+Se puede guardar numeros, cadenas de texto.
+
+let  
+
+var y let para trabajar con cosas que varien en el tiempo.
+
+const son cosas que no van a cambiar en el tiempo. Se debe declarar y asignar en la misma linea. si se hace en lineas separadas daría errór.
+
+
+declarar significa que se esta creando una cajita que se identifica con algun nombre.
+
+Para poder guardar cosas dentro de las varieables se necesita el igual "="
+
+"   " o '  ', se trabaja con cadenas de textos.
+
+Se pueden guardar variables dentro de otras variables a traves de gaurdar los resultados cuando aplicamos algunas operaciones.
+
+Cuando son strings o cadenas de palabras en donde se unen numeros o cualquier otro tipo de caracter, todo se toma como palabras. 
+
+prompt: mostratra un cuadro d dialogo que le pide al user algunos datos. Y dichos datos seran guardados en nuestra variable para que la useamos en la sesión.
+Los prompt por regla general es string.
+
+Console.log : para mostrar los mensajes que estan en 
+
+ Nan: not a number.
+
+Typeof subclase que me deja ver si es string o number en la consola del inspeccionador.
+
+Para transformar de string a number se puede usar parseInt  
+
+Si es con decimales parseintFlow 
+
+El tipo de dato "true" es el valor verdadero. 
+
+Y esta el otro tipo de dato que es "false".
+
+toString para llevar algo de tipo número a tipo texto.
+
+
+Si guardo las constantes con number, me dara solo números.
+
+Entre comillas cadena de caracteres sin ellas dato Númerico mientras sea un número el que se trabaje.
+
+la función "toString" nos lleva valores númericos a ser de cadena de caracteres.
+
+...................................................................................................................................................................................................
+ 
+parseint simpre me va a cambiar los datos a enteros para poder realizar la operación.
+
+
+Control de flujo: Se trabaja con las condicionales, los que nos daran la manera en la que se ira ejecutando el codigo dependiendo de si se cumplen ciertas cosas que son necesarias para que la pagina se vaya 
+ejecutando de manera correcta.
+
+Si la condición es false nunca se va a ver nada, pues lo que esta falso nunca se podra llevar a cabo por ser falso, el false en programacion no se toma en cuenta.
+La condicion que se debe tomar en cuenta es la true que es la variable que va a geneerar cambios y que se veran reflejados en los mensajes.
+ 
+Cuando se coloca un solo signo de = estaria asignando un valor a una variable. Cuando doy un == (dos iguales seguidos) estaría preguntando si ese sería el valor que estas preguntando.
+
+Se puede usar el descarte en las condiciones que se hagan puesto que se no se da una condicion de mayor, soi tampoco es menor que el numero que fije entonces en 
+
+
+let num = parseInt(prompt("ingrese un numero"))
+
+if (isNan(num)) {
+
+	alert("No ingresaste un Numero") 
+}else{
+	
+	if (num <= 7 ) {
+	
+		alert ("el numero que ingresaste es menor o igual que 7")
+	
+	}else(num >7{
+
+		alert ("el numero que ingresaste es mayorl que 7")
+	
+
+	}
+}
+
+
+el == compara el valor, si llegase a estar en cadena de caracteres, y el otro en numero pero los valores son iguales los toma como true
+
+
+el  === compara el valor y el tipo, este es mas estricto en la comparacion. Debe ser exactamente igual.
+
+!= el valor es distinto
+
+!== es distinto en valor y en tipo.
+
+<, <=, >, >= 
+
+&& este me junta dos variables dentero de una condicional
+
+|| me separa las variables dentro de una condicion con la palabra "o", eemplo si no es esye debe ser este, pero si no es ninguna de las dos no es niguna.
+Es decir si no es esta es esta, se trabaja con las variables por seprado.
+
+!a este niega el valor de la variable, Es decir si es valor es false con este OPERADOR LOGICO lo convierte en verdadero.
+
+En casi de valores boleanos se le puede sacar los == para verificar, porque son solo dos valores el true y el false, y el if tiene como valor por defectoel true en el resiltado
+
+
+
+...................................................................................................................................................................................
+
+tipos de bucles 
+
+for: Genera bucles desde un punto hasta otro, y luego se actualiza la variable.
+
+
+While: permite crear bucles que se asumen que en algun momento se dejara de cumplir.
+
+
+Do while
+
+....................................................................................................................................................................................
+
+Variables declaradas fuera de las funciones son llamadas variables globales.
+
+Las variables globales se actualizan con los cambios que se le hagan a las locales
+
+Tienen varias diferencias var y let; var permite redeclarar una variable
+(podes tener 2 variables nombre en el mismo scope con 2 valores distintos, y no hay problema);
+let eso no lo permite; y let tiene scope de bloque (si la declaras por ejemplo dentro de un ciclo, su scope es ese ciclo); 
+var no tiene scope de bloque.
+
+en las variables fecha tengo return implicitos en la declaracion.
+
+
+

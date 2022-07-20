@@ -1,0 +1,80 @@
+do {
+	const numeroAzar = Math.ceil(Math.random() * 10);
+	console.log("Número elegido:", numeroAzar);
+	let intentos = 1;
+
+	let numeroUsuario = parseInt(prompt("Escriba un número"));
+
+	while (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 10) {
+		numeroUsuario = parseInt(prompt("Escriba un número del 1 al 10"));
+	}
+	while (numeroUsuario !== numeroAzar) {
+		console.log(`El número ${numeroUsuario} no es el correcto`);
+		intentos++;
+		if (intentos <= 3) {
+			numeroUsuario = parseInt(prompt("Escriba un número"));
+			while (isNaN(numeroUsuario) || numeroUsuario < 1 || numeroUsuario > 10) {
+				numeroUsuario = parseInt(prompt("Escriba un número del 1 al 10"));
+			}
+		}
+	}
+
+	if (numeroUsuario === numeroAzar) {
+		console.log(`¡Excelente! El número elegido fue ${numeroAzar}`);
+	} else {
+		console.log("Otra vez será");
+	}
+} while (confirm("¿Querés volver a jugar?"));
+
+
+
+
+
+
+
+
+const INICIO = 0;
+const META = 63;
+const EL_LABERINTO = 42;
+const DEL_LABERINTO_AL_30 = 30;
+const LA_CALAVERA = 58;
+const LA_POSADA = 19;
+const EL_POZO_DE_BRONCE = 31;
+const jugador1 = "jugador 1";
+const jugador2 = "Máquina";
+let ganador = "";
+let posicionJugador1 = 0;
+let posicionJugador2 = 0;
+let turnosPerdidosJugador1 = 0;
+let turnosPerdidosJugador2 = 0;
+
+
+do {
+	if (turnosPerdidosJugador1 > 0) {
+		alert(`Turno perdido para ${jugador1}: ${turnosPerdidosJugador1}`);
+		console.log(
+			`%c${jugador1} - Turno ${turnosPerdidosJugador1} perdido`,
+			"color:red",
+		);
+		turnosPerdidosJugador1--;
+	} else {
+		posicionJugador1 += Math.floor(Math.random() * 6 + 1);
+		console.log(`${jugador1}, pos: ${posicionJugador1}`);
+		if (posicionJugador1 === EL_LABERINTO) {
+			alert(`${jugador1}: ¡Del laberinto al 30!`);
+			console.log("- ".repeat(10));
+			posicionJugador1 = DEL_LABERINTO_AL_30;
+		} else if (posicionJugador1 === LA_CALAVERA) {
+			alert(`${jugador1}: ¡Calavera! Vuelve al inicio`);
+			console.log("- ".repeat(10));
+			posicionJugador1 = INICIO;
+		} else if (
+			posicionJugador1 === LA_POSADA ||
+			posicionJugador1 === EL_POZO_DE_BRONCE
+		) {
+			turnosPerdidosJugador1 = 2;
+			alert(`${jugador1} pierde 2 turnos`);
+		} else if (posicionJugador1 >= META) {
+			ganador = jugador1;
+		}
+	}

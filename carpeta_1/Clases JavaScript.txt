@@ -1,0 +1,77 @@
+Hardcodeada > es colocar variables que sean estaticos, en JS todo debe cambiar.
+
+Javascript:
+
+sintaxis: como se debe escribir.
+
+fundamentos del JS:
+tiene sus propias reglas y es intrerpretativo.
+
+la buena practica es usar un archivo independiente para poder tener un codigo HTML mas limpio. Todo mas ordenado. y ademas me ayuda a buscar mas rapido los errores que puedan haber.
+Se puede reutilizar el archivo para otros proyectos, porque así tendría la logíca por separado.
+
+Crear comentarios comandos // y /* "  " */
+
+prompt:
+
+sentencia que permite pedirle cosas la user.
+
+Alert: Alerta o aviso.
+
+console: es una palabra clave para mostrar cosas por la consola.
+
+Variable: es una cajita en donde se guarda información que se puede ir acomodando durante el tiempo.
+se declara.
+(nombre de la variable)
+var nombre  = ;
+
+Se puede guardar numeros, cadenas de texto.
+
+let  
+
+var y let para trabajar con cosas que varien en el tiempo.
+
+const son cosas que no van a cambiar en el tiempo. Se debe declarar y asignar en la misma linea. si se hace en lineas separadas daría errór.
+
+
+declarar significa que se esta creando una cajita que se identifica con algun nombre.
+
+Para poder guardar cosas dentro de las varieables se necesita el igual "="
+
+"   " o '  ', se trabaja con cadenas de textos.
+
+
+Se pueden guardar variables dentro de otras variables a traves de gaurdar los resultados cuando aplicamos algunas operaciones.
+
+Cuando son strings o cadenas de palabras en donde se unen numeros o cualquier otro tipo de caracter, todo se toma como palabras. 
+
+prompt: mostratra un cuadro d dialogo que le pide al user algunos datos. Y dichos datos seran guardados en nuestra variable para que la useamos en la sesión.
+Los prompt por regla general es string.
+
+Console.log : para mostrar los mensajes que estan en 
+
+ Nan: not a number.
+
+Typeof subclase que me deja ver si es string o number en la consola del inspeccionador.
+
+Para transformar de string a number se puede usar parseInt  
+
+Si es con decimales parseintFlow 
+
+El tipo de dato "true" es el valor verdadero. 
+
+Y esta el otro tipo de dato que es "false".
+
+toString para llevar algo de tipo número a tipo texto.
+
+
+Si guardo las constantes con number, me dara solo números.
+
+Entre comillas cadena de caracteres sin ellas dato Númerico mientras sea un número el que se trabaje.
+
+la función "toString" nos lleva valores númericos a ser de cadena de caracteres.
+
+...................................................................................................................................................................................................
+ 
+parseint simpre me va a cambiar los datos a enteros para poder realizar la operación
+
